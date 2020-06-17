@@ -114,29 +114,7 @@ $response=$service->spreadsheets_values->get($spreadsheetId,$range);
 $values=$response->getValues();
 
 $countRow=1;
-/*echo "<pre>";
-print_r($values);
-echo "</pre>";*/
-//die();
 $message='';
-/*if(empty($values)){
-	$message.= "No data found";
-}else{
-	$countRow=1;
-	
-	foreach ($values as  $value) {
-		$countRow++;
-		$message.= "<tr> <form method='post' action=''>
-		         <td><input class='inputRow' type='text' name='name' value='".$value[0]."'></td>
-		         <td><input class='inputRow' type='text' name='age' value='".$value[1]."'>
-		         <input type='hidden' name='row' value='".$countRow."'></td>
-		         <td><input class='inputButton' type='submit' name='update' value='update'></td>
-		      </form></tr>";
-	}
-	
-}*/
-//end get data
-
 ?>
 
 <!DOCTYPE html>
